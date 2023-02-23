@@ -1,0 +1,10 @@
+<div class="control-section">
+    <div>
+        <ejs-stockchart id='stockChartRanges' [enableSelector]='enable' [tooltip]='tooltip' [chartArea]='chartArea' style="display:block;"
+            [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (tooltipRender)='tooltipRender($event)' [crosshair]='crosshair' (load)='load($event)'>
+            <e-stockchart-series-collection>
+                <e-stockchart-series [dataSource]='data1' type='Line' xName='x'> </e-stockchart-series>
+            </e-stockchart-series-collection>
+        </ejs-stockchart>
+    </div>
+</div>
